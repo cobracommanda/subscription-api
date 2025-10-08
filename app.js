@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Subscription Tracker API!");
 });
 
-const HOST = "0.0.0.0";
+const HOST = "srv1043024.hstgr.cloud";
 app.listen(PORT, () => {
   console.log(`Subscription Tracker API is running on http://${HOST}:${PORT}`);
   connectToDatabase();

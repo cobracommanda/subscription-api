@@ -26,10 +26,9 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Subscription Tracker API!");
 });
 
+const HOST = "0.0.0.0";
 app.listen(PORT, () => {
-  console.log(
-    `Subscription Tracker API is running on http://localhost:${PORT}`
-  );
+  console.log(`Subscription Tracker API is running on http://${HOST}:${PORT}`);
   connectToDatabase();
 });
 
